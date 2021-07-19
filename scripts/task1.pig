@@ -1,6 +1,6 @@
----Lertas George
----Malfa Ilia Aikaterini
----for each athlete (ID, Name) the number of gold medals he has won
+---Lertas George, Malfa Ilia Aikaterini
+
+---For each athlete (ID, Name) the number of gold medals he has won
 
 A = LOAD 'athlete_events.tsv' using PigStorage ('/')  as (ID:int , Name:chararray , Sex:chararray , Age:int, Height:long, Weight:long, Team:chararray ,NOC:chararray ,Games:chararray, Year:int , Season:chararray, City:chararray, Sport:chararray, Event:chararray, Medal:chararray);
 B = FILTER A BY Medal == 'Gold';
