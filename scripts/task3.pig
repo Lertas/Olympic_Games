@@ -1,6 +1,7 @@
----Lertas George, dit2010dsc, dit2010dsc@office365.uop.gr
----Malfa Ilia Aikaterini, dit2011dsc, dit2011dsc@office365.uop.gr
----TASK 3
+---Lertas George, dit2010dsc, Malfa Ilia Aikaterini
+
+---Find for each event (Games) the first three (3) teams (Team) in terms of number of female participants, 
+---as well as the first sport (Sport) of female athletes in each of these teams.
 
 A = LOAD 'athlete_events.tsv' using PigStorage ('/')  as (ID:int , Name:chararray , Sex:chararray , Age:int, Height:long, Weight:long, Team:chararray ,NOC:chararray ,Games:chararray, Year:int , Season:chararray, City:chararray, Sport:chararray, Event:chararray, Medal:chararray);
 B = Group A by (Name, Games);
