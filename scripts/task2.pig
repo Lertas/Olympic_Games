@@ -1,6 +1,7 @@
----Lertas George, dit2010dsc, dit2010dsc@office365.uop.gr
----Malfa Ilia Aikaterini, dit2011dsc, dit2011dsc@office365.uop.gr
----TASK 2
+---Lertas George, Malfa Ilia Aikaterini
+
+---Find the number of gold medals, the number of silver medals, the number of bronze medals, 
+---and the total number of medals won by an athlete (Name) in a single event (Games).
 
 A = LOAD 'athlete_events.tsv' using PigStorage ('/')  as (ID:int , Name:chararray , Sex:chararray , Age:int, Height:long, Weight:long, Team:chararray ,NOC:chararray ,Games:chararray, Year:int , Season:chararray, City:chararray, Sport:chararray, Event:chararray, Medal:chararray);
 B = Group A by (Name, Games);
